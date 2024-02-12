@@ -1,18 +1,18 @@
-import ListUsers from "./components/ListUsers";
+'use client'
+
+import UserTable from "../components/UserTable";
+import { useUsers } from "../hooks/useUsers";
 
 
-export default async function Home() {
+export default function Home() {
 
-  const res = await fetch('https://randomuser.me/api?results=5&noinfo')
-  const data = await res.json()
+  const {users}= useUsers()
 
-  const users = data.results
-
-
+  const listUsers = users.results
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <ListUsers results={users}/>
+      {listUsers !== undefined && <UserTable users={listUsers} />}
     </main>
   );
 }
