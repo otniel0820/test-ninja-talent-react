@@ -1,4 +1,4 @@
-import { Result } from '@/interfaces/usersInterfaces'
+import { Result } from '../interfaces/usersInterfaces'
 import Image from 'next/image'
 import React from 'react'
 import { Button } from './Button'
