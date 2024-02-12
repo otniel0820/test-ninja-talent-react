@@ -3,7 +3,7 @@ import Table from "./Table";
 import { createColumnHelper } from "@tanstack/react-table";
 import { InputText } from "./InputText";
 import { Modal } from "./Modal";
-import { Result } from "@/interfaces/usersInterfaces";
+import { Result } from "../interfaces/usersInterfaces";
 import Image from "next/image";
 import CardUser from "./CardUser";
 

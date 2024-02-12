@@ -22,6 +22,7 @@
     "react": "^18",
     "react-cva": "^1.2.0",
     "react-dom": "^18",
+    "react-hook-form": "^7.50.1",
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
